@@ -1,0 +1,18 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+class VowelsTest {
+
+    @Test
+    public void testCountVowels() {
+        assertEquals(2, Vowels.countVowels("Hello World"));
+        assertEquals(3, Vowels.countVowels("Why do you ask?"));
+        assertEquals(0, Vowels.countVowels("Brr"));
+    }
+
+    @Test
+    public void testCountVowelsWithNumbersAndSymbols() {
+        assertEquals(1, Vowels.countVowels("Testing 123!"));
+        assertEquals(0, Vowels.countVowels("!@#%^&*()"));
+    }
+}
