@@ -1,0 +1,50 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+class StackTest {
+
+    @Test
+    public void testPushAndPeek() {
+        Stack stack = new Stack();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
+        assertEquals(3, stack.peek());
+    }
+
+    @Test
+    public void testPop() {
+        Stack stack = new Stack();
+        stack.push(1);
+        stack.push(2);
+
+        assertEquals(2, stack.pop());
+        assertEquals(1, stack.pop());
+    }
+
+    @Test
+    public void testIsEmpty() {
+        Stack stack = new Stack();
+
+        assertTrue(stack.isEmpty());
+
+        stack.push(1);
+
+        assertFalse(stack.isEmpty());
+    }
+
+    @Test
+    public void testEmptyPop() {
+        Stack stack = new Stack();
+
+        assertThrows(IllegalStateException.class, stack::pop);
+    }
+
+    @Test
+    public void testEmptyPeek() {
+        Stack stack = new Stack();
+
+        assertThrows(IllegalStateException.class, stack::peek);
+    }
+}
