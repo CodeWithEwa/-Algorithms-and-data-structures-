@@ -1,0 +1,32 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+class QueueTest {
+
+    @Test
+    public void testAddAndRemove() {
+        Queue queue = new Queue();
+        queue.add(1);
+        queue.add(2);
+        queue.add(3);
+
+        assertEquals(1, queue.remove());
+        assertEquals(2, queue.remove());
+        assertEquals(3, queue.remove());
+    }
+
+    @Test
+    public void testRemoveFromEmptyQueue() {
+        Queue queue = new Queue();
+        assertNull(queue.remove());
+    }
+
+    @Test
+    public void testRemoveAfterAdd() {
+        Queue queue = new Queue();
+        queue.add(1);
+
+        assertEquals(1, queue.remove());
+        assertNull(queue.remove());
+    }
+}
