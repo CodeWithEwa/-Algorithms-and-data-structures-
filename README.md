@@ -1,12 +1,13 @@
-# Algorithms-and-data-structures
+# Algorytmy i struktury danych
 
-Hello in the repository dedicated to algorithms and data structures! This project was created as part of an assignment for course completion.
-## Autor 
+Witamy w repozytorium poświęconym algorytmom i strukturom danych! Projekt ten powstał w ramach zadania na zakończenie kursu.
+## Autor
 [@CodeWithEwa](https://github.com/CodeWithEwa )
 
-## Requirement
-* Java
-## Algorithms
-In the directory, you will find implementations of various algorithms. Each algorithm is described in the code, and a set of unit tests is included with it.
+## Wymóg
+* Java Development Kit (JDK)
+* IntelliJ IDEA
+* JUnit
  
-
+## Algorytmy
+W katalogu znajdziesz implementacje różnych algorytmów. Każdy algorytm jest opisany w kodzie, a do niego dołączony jest zestaw testów jednostkowych.
